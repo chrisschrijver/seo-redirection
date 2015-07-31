@@ -130,7 +130,7 @@ if($redirect_to_type =='Folder')
 			$wpdb->query($wpdb->prepare(
 				"
 				UPDATE $table_name 
-				SET redirect_from = %s, redirect_to = %s, redirect_type = %s, redirect_from_type = %s, redirect_from_folder_settings = %s, redirect_from_subfolders = %s, redirect_to_type = %s, redirect_to_folder_settings = %s, regex = %s, enabled = %s'
+				SET redirect_from = %s, redirect_to = %s, redirect_type = %s, redirect_from_type = %s, redirect_from_folder_settings = %s, redirect_from_subfolders = %s, redirect_to_type = %s, redirect_to_folder_settings = %s, regex = %s, enabled = %s
 				WHERE ID = %d
 				",
 				$redirect_from, $redirect_to, $redirect_type, $redirect_from_type, $redirect_from_folder_settings, $redirect_from_subfolders, $redirect_to_type, $redirect_to_folder_settings, $regex, $enabled, $edit
